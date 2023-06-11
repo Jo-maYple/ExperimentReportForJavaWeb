@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ExperimentReportForJavaWeb:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ExperimentReportForJavaWeb_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ExperimentReportForJavaWeb" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-el-api:9.0.76" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="ExperimentReportForJavaWeb/web/Web" />
+      <element id="dir-copy" path="$PROJECT_DIR$/web" />
+    </root>
+  </artifact>
+</component>
