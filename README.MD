@@ -9,3 +9,5 @@ name 类型为varchar
 password 类型为varchar  
 email 类型为varchar  
 birthday 类型为date  
+  
+更新1:相关文件添加注释

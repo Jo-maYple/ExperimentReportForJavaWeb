@@ -9,10 +9,12 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //设定字符集
         req.setCharacterEncoding("utf-8");
         resp.setContentType("text/html;charset=utf-8");
         HttpSession session = req.getSession();
         Writer wr = resp.getWriter();
+        //对用户侧发送的内容进行判断，如果账号密码均正确则设定cookie的logged的值为logged 否则打印密码错误的返回内容
         if (req.getParameter("userName").equals("1001")){
             if (req.getParameter("passwd").equals("123")){
                 resp.addCookie(new Cookie("logged", "logged"));

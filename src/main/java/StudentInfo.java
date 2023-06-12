@@ -1,3 +1,6 @@
+/**
+ * BeanListHandler所用的javabean对象
+ */
 public class StudentInfo {
     private int id;
     private String name;

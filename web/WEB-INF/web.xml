@@ -11,6 +11,7 @@
         <param-name>loginpwd</param-name>
         <param-value>123</param-value>
     </context-param>
+    <!--上面两个初始化对象为实验一用    下面两个初始化对象为实验三用-->
     <context-param>
         <param-name>onlineCount</param-name>
         <param-value>0</param-value>

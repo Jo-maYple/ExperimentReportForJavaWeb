@@ -4,6 +4,7 @@
     <title>添加学生信息</title>
 </head>
 <body>
+    <%--表单，设定向服务器提交的数据--%>
     <form action="addServlet" method="post">
         姓名:<input type="text" placeholder="姓名" name="userName" required><br>
         学号:<input type="text" placeholder="学号" name="number" required><br>

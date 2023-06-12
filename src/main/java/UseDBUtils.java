@@ -11,6 +11,8 @@ public class UseDBUtils {
     public static void main(String[] args) throws SQLException, PropertyVetoException {
         QueryRunner runner = new QueryRunner(DBUtils.getDataSource());
         //runner.update("use jdbc;");
+        //QueryRunner的使用方式 P239
+        //BeanListHandler的使用需要有一个正确的javabean对象 使用见P240
         List<StudentInfo> studentInfos = (List) runner.query("select * from jdbc.users", new BeanListHandler(StudentInfo.class));
         for (StudentInfo stu:studentInfos){
             System.out.println(stu.toString());

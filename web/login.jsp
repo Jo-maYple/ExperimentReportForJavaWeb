@@ -4,6 +4,7 @@
     <title>登录验证</title>
 </head>
 <body>
+<%--登录用表单--%>
 <form action="loginServlet" method="post">
     用户名:<input type="text" placeholder="用户名" name="userName" required><br>
     密码:<input type="text" placeholder="密码" name="passwd" required><br>

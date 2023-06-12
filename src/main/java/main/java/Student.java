@@ -1,5 +1,8 @@
 package main.java;
 
+/**
+ * Student类 用于存储学生信息，其中性别采用枚举实现，输入输出时会自动转化为字符串
+ */
 public class Student {
     private String number;
     private String userName;
@@ -55,6 +58,10 @@ public class Student {
         this.department = department;
     }
 
+    /**
+     *
+     * 重写toString方法 使得对象执行.toString能够生成特定字符串。
+     */
     @Override
     public String toString() {
         return

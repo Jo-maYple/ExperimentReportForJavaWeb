@@ -6,6 +6,9 @@ import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 
 public class DBUtils {
+    /**
+     *使用c3p0连接池初始化连接对象 使用见书P236
+     */
     public static DataSource getDataSource() throws PropertyVetoException {
         ComboPooledDataSource ds = new ComboPooledDataSource();
         ds.setDriverClass("com.mysql.cj.jdbc.Driver");
